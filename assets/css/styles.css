@@ -1,0 +1,112 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+
+body, html {
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #91b1f7;
+    background: linear-gradient(145deg, #a3c1ff, #91b1f7);
+    /* background: #873e4a;
+    background: linear-gradient(145deg, #a05b71, #873e4a);
+    */
+    background-size: 400% 400%;
+    
+    animation: shimmer 8s ease infinite;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
+.hidden-heading {
+    display: none;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+main {
+    /* Enlarge main element to push footer down*/
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.background {
+    justify-content: center;
+    align-items: center;
+}
+
+.cogwheel {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.cog {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.01s;
+}
+
+.cog:nth-child(1) { top: 0; left: 50%; transform: translate(-50%, -50%); }
+.cog:nth-child(2) { top: 50%; left: 100%; transform: translate(-50%, -50%); }
+.cog:nth-child(3) { top: 100%; left: 50%; transform: translate(-50%, -50%); }
+.cog:nth-child(4) { top: 50%; left: 0; transform: translate(-50%, -50%); }
+.cog:nth-child(5) { top: 50%; left: 50%; transform: translate(-50%, -50%); }
