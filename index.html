@@ -8,10 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta tags for search engines -->
     <meta name="description" content="Jacqueline Kalmar portfolio and resume">
-    <meta name="keywords"
-        content="logistics, transport, scm, inventory, warehouse, traffic lead, web development, full-stack, front end, stockholm, sweden">
     <!-- Title -->
-    <title>Landing Page</title>
+    <title>Home | Jacqueline Kalmár Portfolio</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -23,8 +21,8 @@
 <body>
     <!-- Header -->
     <header>
-        <a href="index.html">
-            <h1 id="logo">Jacqueline</h1>
+        <a href="index.html" id="logo">
+            <img src="assets/images/profile-img.webp" alt="Jaqi Logo">
         </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label">
@@ -33,7 +31,15 @@
         <nav>
             <ul id="menu">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="contact.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <!-- Decide if to be added at later stage
+                <li><a href="recommendations.html">Gallery</a></li>
+                <li><a href="services.html">Gallery</a></li>
+                <li><a href="blog.html">Gallery</a></li>
+                -->
             </ul>
         </nav>
     </header>
@@ -44,12 +50,12 @@
         <h1 class="hidden-heading">Welcome!</h1>
         <section class="cogwheel">
             <!-- Each cog is an article, representing individual self-contained content -->
-            <article class="cog" data-link="home.html"></article>
+            <article class="cog" data-link="index.html"></article>
             <article class="cog" data-link="about.html"></article>
-            <article class="cog" data-link="my-portfolio.html"></article>
-            <article class="cog" data-link="my-resume.html"></article>
-            <article class="cog" data-link="contact-me.html"></article>
-            <!-- To be added at later stage
+            <article class="cog" data-link="contact.html"></article>
+            <article class="cog" data-link="resume.html"></article>
+            <article class="cog" data-link="portfolio.html"></article>
+            <!-- DEcide if to be added at later stage
             <article class="cog" data-link="recommendations.html"></article>
             <article class="cog" data-link="services.html"></article>
             <article class="cog" data-link="blog.html"></article>
@@ -60,9 +66,14 @@
     <footer>
         <ul id="social-networks">
             <li>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+                <a href="https://www.linkedin.com/in/jacqueline-kalmar/" target="_blank" rel="noopener"
                     aria-label="Visit LinkedIn page (opens in a new tab)">
-                    <i class="fa-brands fa-linkedin"></i></a>
+                    <i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/JaqiKal" target="_blank" rel="noopener"
+                    aria-label="Visit LinkedIn page (opens in a new tab)">
+                    <i class="fa-brands fa-github"></i></a>
             </li>
         </ul>
     </footer>
