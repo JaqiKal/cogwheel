@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Example</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('/assets/images/rsz_purplesky.webp') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.5);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 16em;
+            font-weight: 600;
+            background: -webkit-linear-gradient(transparent, transparent), url('../images/purplesky-mini.webp');
+            background: -o-linear-gradient(transparent, transparent), url('../images/purplesky-mini.webp');
+            background: -moz-linear-gradient(transparent, transparent), url('../images/purplesky-mini.webp');
+            background: linear-gradient(transparent, transparent), url('../images/purplesky-mini.webp');
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            filter: drop-shadow(0 0 20mm #800080);
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glass">
+        <h1>Welcome world</h1>
+        <p>We rule</p>
+    </div>
+</body>
+
+</html>
