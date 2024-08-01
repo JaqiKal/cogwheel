@@ -201,7 +201,7 @@ main {
 
 
 h1 {
-    font-size: 15em;
+    font-size: 16em;
     font-weight: 600;
     background: -webkit-linear-gradient(transparent, transparent), url('/assets/images/purplesky-mini.webp');
     background: -o-linear-gradient(transparent, transparent), url('/assets/images/purplesky-mini.webp');
