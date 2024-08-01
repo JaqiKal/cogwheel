@@ -1,6 +1,6 @@
-/* NOT FOUND 404 PAGE */
-
+/* NOT FOUND - 404 PAGE */
 .background {
+    background: url('../images/purplesky-mini.webp') no-repeat center center fixed;
     background-size: cover;
     height: 100%;
     display: flex;
@@ -10,20 +10,18 @@
     position: relative;
 }
 
-
 h1 {
     font-size: 16em;
     font-weight: 600;
-    background: -webkit-linear-gradient(transparent, transparent), url('/assets/images/purplesky-mini.webp');
-    background: -o-linear-gradient(transparent, transparent), url('/assets/images/purplesky-mini.webp');
-    background: -moz-linear-gradient(transparent, transparent), url('/assets/images/purplesky-mini.webp');
-    background: linear-gradient(transparent, transparent), url('/assets/images/purplesky-mini.webp');
+    background: -webkit-linear-gradient(transparent, transparent), url('../images/purplesky-mini.webp');
+    background: -o-linear-gradient(transparent, transparent), url('../images/purplesky-mini.webp');
+    background: -moz-linear-gradient(transparent, transparent), url('../images/purplesky-mini.webp');
+    background: linear-gradient(transparent, transparent), url('../images/purplesky-mini.webp');
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     filter: drop-shadow(0 0 20mm #800080);
 }
-
 
 h3 {
     font-size: 2.5em;
@@ -60,7 +58,6 @@ p {
     -webkit-user-select: none;
     touch-action: manipulation;
     filter: drop-shadow(0 0 0.25rem #300330);
-
 }
 
 .btn:hover {
@@ -72,5 +69,4 @@ p {
         rgba(241, 184, 241, 0.25) 0 8px 16px,
         rgba(241, 184, 241, 0.25) 0 16px 32px;
     transform: scale(1.05);
-
 }
