@@ -188,60 +188,41 @@ main {
 }
 
 /* NOT FOUND 404 PAGE */
-.background {
 
-    background-size: cover;
+.background {
+    background-size: cover:
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
-    background-color: #c0d1f8;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(48, 3, 48, 0);
 
-    z-index: 1;
-}
-
-.404-container {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-}
-
-h1,
-h3,
-p {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    background: -webkit-linear-gradient(transparent, transparent), url('/assets/images/night-sky-img.webp');
-    background: -o-linear-gradient(transparent, transparent), url('/assets/images/night-sky-img.webp');
-    background: -moz-linear-gradient(transparent, transparent), url('/assets/images/night-sky-img.webp');
-    background: linear-gradient(transparent, transparent), url('/assets/images/night-sky-img.webp');
+h1 {
+    font-size: 15em;
+    font-weight: 600;
+    background: -webkit-linear-gradient(transparent, transparent), url('/assets/images/purplesky-mini.webp');
+    background: -o-linear-gradient(transparent, transparent), url('/assets/images/purplesky-mini.webp');
+    background: -moz-linear-gradient(transparent, transparent), url('/assets/images/purplesky-mini.webp');
+    background: linear-gradient(transparent, transparent), url('/assets/images/purplesky-mini.webp');
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    filter: drop-shadow(0 0 20mm #800080);       
 }
 
-h1 {
-    font-size: 10em;
-}
 
 h3 {
-    font-size: 2em;
+    font-size: 2.5em;
+    color: #143265;
 }
 
 p {
-    font-size: 1.2em;
-    margin-bottom: 2em;
+    font-size: 2em;
+    margin-bottom: 4em;
+    color: #143265;
 }
 
 .btn {
@@ -250,15 +231,41 @@ p {
     padding: 10px 20px;
     text-decoration: none;
     font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border: 0;
+    border-radius: 50px;
+    transition: all 0.25s ease;
     z-index: 3;
     position: relative;
+    box-shadow: rgba(241, 184, 241, 0.2) 0 -25px 18px -14px inset,
+                rgba(241, 184, 241, 0.15) 0 1px 2px, 
+                rgba(241, 184, 241, 0.15) 0 2px 4px, 
+                rgba(241, 184, 241, 0.15) 0 4px 8px, 
+                rgba(241, 184, 241, 0.15) 0 8px 16px, 
+                rgba(241, 184, 241, 0.15) 0 16px 32px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    filter: drop-shadow(0 0 0.25rem #300330);
+
 }
 
 .btn:hover {
     background-color: #800080;
+    box-shadow: rgba(241, 184, 241, 0.35) 0 -25px 18px -14px inset, 
+                rgba(241, 184, 241, 0.25) 0 1px 2px, 
+                rgba(241, 184, 241, 0.25) 0 2px 4px, 
+                rgba(241, 184, 241, 0.25) 0 4px 8px, 
+                rgba(241, 184, 241, 0.25) 0 8px 16px, 
+                rgba(241, 184, 241, 0.25) 0 16px 32px;
+    transform: scale(1.05);
+
 }
+
+
+
 
 /* MEDIA QUERIES */
 /* Small devices (phones, 600px and down) */
